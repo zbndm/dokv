@@ -1,0 +1,161 @@
+/* rest style */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: Inter, Helvetica, sans-serif;
+  color: #232323;
+  text-rendering: optimizeLegibility;
+}
+
+strong,
+b {
+  font-weight: 600;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+code {
+  font-family: "Dank Mono", monospace;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 16px;
+}
+
+/* common */
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.w-half {
+  width: 50%;
+  overflow-x: hidden;
+}
+
+/* app style */
+
+body {
+  padding: 32px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+h3:first-child {
+  margin-top: 0px;
+}
+
+h3 em {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  color: #999;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+label input[type="text"] {
+  min-width: 300px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+label input:focus {
+  border-color: #999;
+}
+
+li>p {
+  margin-bottom: 8px;
+}
+
+li+li {
+  padding-top: 16px;
+}
+
+p + p {
+  padding-top: 12px;
+}
+
+.info {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+}
+
+.info-error {
+  background-color: #fee;
+  color: #e00;
+}
+
+.tag-input section {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.tag-input section + section {
+  margin-top: 4px;
+}
+
+.tag-input section button {
+  display: inline-flex;
+  color: #888;
+  cursor: pointer;
+}
+
+.tag-input section button:hover {
+  color: #232323;
+}
+
+.tag-input section button svg{
+  width: 20px;
+  height: 20px;
+}
+
+.json-viewer .comma,
+.json-viewer .colon {
+  color: #999;
+}
